@@ -1,0 +1,9 @@
+<img src="logo.png" alt="Logo" class="center"/>
+<form name="myForm">
+    <p>Enter name of a city and press search:</p>
+    <input type="text" ng-model="city" required>
+    <div ng-repeat="search in lastSearches" class="centerText">
+        <a href="/#!/details" ng-click="Find(search)">{{search.location.name}} - {{search.location.localtime}}</a>
+    </div>
+    <button type="button" class="btn" ng-disabled="myForm.$invalid" ng-click="Search(city)">Search</button>
+</form>

@@ -1,0 +1,51 @@
+<img src="logo.png" alt="Logo" class="details" />
+<div class="container">
+    <div class="row">
+        <h1 class="offset-sm-2">{{city}}</h1>
+        <img src="{{icon}}" alt="icon" class="offset-sm-6">
+        <h1>{{degree}}&deg;</h1>
+    </div>
+    <div class="row">
+        <h2 class="offset-sm-2">{{dateTime}}</h2>
+        <h2 class="offset-sm-4 conditionText">{{conditionText}}</h2>
+    </div>
+    <div class="row">
+        <div class="btn-group  btn-group-lg offset-sm-5">
+            <button type="button" class="btn btn-default" ng-disabled="today" ng-click="Today()">Today</button>
+            <button type="button" class="btn btn-default" ng-disabled="twodays" ng-click="TwoDays()">48 Hours Forecast</button>
+        </div>
+    </div>
+    <div ng-show="today" class="today">
+        <div class="row">
+            <h2 class="offset-sm-4">Feels like</h2>
+            <h2 class="offset-sm-2 right">{{feelsLike}}&deg;</h2>
+        </div>
+        <div class="row">
+            <h2 class="offset-sm-4">Wind</h2>
+            <h2 class="offset-sm-2 wind">{{wind}} km/h</h2>
+        </div>
+        <div class="row">
+            <h2 class="offset-sm-4">Humidity</h2>
+            <h2 class="offset-sm-2 right">{{humidity}}%</h2>
+        </div>
+    </div>
+    <button class="btn btn-default forecast-button" ng-click="Forecast()">48 Hours Forecast</button>
+    <div ng-show="twodays" class="twodays">
+        <div ng-repeat="day in days">
+            <div ng-repeat="hour in day.hour">
+                <div class="row">
+                    <h4 class="offset-sm-4">{{hour.time.split(' ')[1]}}</h4>
+                    <img src="{{hour.condition.icon}}" alt="icon" class="offset-sm-3" style="width: 40px; height: 40px;">
+                    <h5>{{hour.temp_c}}&deg;</h5>
+                </div>
+                <div class="row">
+                    <h5 class="offset-sm-4">{{hour.time.split(' ')[0]}}</h5>
+                    <h5 class="offset-sm-2">{{hour.condition.text}}</h5>
+                </div>
+                <svg height="1" width="628" class="offset-sm-3">
+                    <line x1="0" y1="0" x2="628" y2="0" style="stroke:rgb(0, 0, 0);" />
+                </svg>
+            </div>
+        </div>
+    </div>
+</div>

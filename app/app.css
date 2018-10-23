@@ -1,0 +1,162 @@
+@media only screen and (max-width: 766px) {
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    width: 50%;
+  }
+
+  .details {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    width: 50%;
+  }
+
+  .centerText {
+    text-align: center;
+  }
+  
+  form p {
+    font-size: x-small;
+    margin-left: 10%;
+  }
+
+  form input {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  form button {
+    width: 40%;
+    height: 50px;
+    margin-top: 1em;
+    margin-left: 7em;
+  }
+  
+  .offset-sm-6 {
+    margin-left: 2%
+  }
+
+  .offset-sm-2 {
+    margin-left: 5%;
+  }
+
+  .right {
+    margin-left: 37%;
+  }
+
+  .wind {
+    margin-left: 41%;
+  }
+
+  .offset-sm-4 {
+    margin-left: 5%;
+  }
+
+  .conditionText {
+    margin-left: 20%;
+  }
+
+  .btn-group{
+    display: none;
+  }
+
+  .forecast-button {
+    display: block;
+    margin-top: 1em; 
+    margin-left: 30%; 
+  }
+
+  .forecast h1 {
+    position: absolute;
+    left: 11px;
+    top: 21px;
+    font-size: 48px;
+  }
+
+  .forecast .row h1 {
+    position: absolute;
+    left: 22px;
+    top: 122px;
+    font-size: 34px;
+  }
+  .forecast .row h2 {
+    position: absolute;
+    left: 218px;
+    top: 135px;
+    font-size: 16px;
+  }
+
+  .twodays {
+    position: absolute;
+    left: 42px;
+    top: 200px;
+  }
+  .twodays{
+    position: absolute;
+    left: 42px;
+    top: 200px;
+  }
+  .twodays .row img{
+    margin-left: 40%;
+  }
+  .condition {
+    margin-left: 19%;
+  }
+
+}
+@media only screen and (min-width: 767px) {
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5em;
+    margin-bottom: 10em;
+  }
+  .details {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+
+  .centerText {
+    text-align: center;
+  }
+  
+  form p {
+    font-size: x-large;
+    margin-left: 25%;
+  }
+
+  form input {
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  form button {
+    width: 20%;
+    height: 50px;
+    margin-top: 5em;
+    margin-left: 40%;
+  }
+
+  .twodays {
+    margin-top: 2em;
+  }
+
+  .forecast-button {
+    display: none;
+  }
+}
+
+

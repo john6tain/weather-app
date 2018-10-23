@@ -1,0 +1,25 @@
+<div class="container forecast">
+    <h1>Forecast</h1>
+    <div class="row">
+        <h1>{{city}}</h1>
+        <h2>next 48 hours</h2>
+    </div>
+    <div class="twodays">
+        <div ng-repeat="day in days">
+            <div ng-repeat="hour in day.hour">
+                <div class="row">
+                    <h4>{{hour.time.split(' ')[1]}}</h4>
+                    <img src="{{hour.condition.icon}}" alt="icon" style="width: 40px; height: 40px;">
+                    <h5>{{hour.temp_c}}&deg;</h5>
+                </div>
+                <div class="row">
+                    <h5>{{hour.time.split(' ')[0]}}</h5>
+                    <h5 class="condition">{{hour.condition.text}}</h5>
+                </div>
+                <svg height="1" width="240">
+                    <line x1="0" y1="0" x2="240" y2="0" style="stroke:rgb(0, 0, 0);" />
+                </svg>
+            </div>
+        </div>
+    </div>
+</div>
